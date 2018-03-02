@@ -1,12 +1,27 @@
 ul {
 
     display:flex;
-    flex-direction: column;
+    flex-direction: column; /*just switching this from row to column will change everything! Note that this actually swtiches the AXES as well
+    SO main axis is down and cross axis is across*/
+    /*column-reverse will allow you to easily do a column but in reverse*/
+    /*justify-content by default allows us to orient items across the main axis*/
+    justify-content: center;
+    align-items: center;
+    /*align-items will allows us to set items on the cross-axis*/
+    /*align-content is for multiline flex boxes*/
 }
 
 li {
-    width: 100px;
-    height: 100px;
-    background-color: #8cacea;
-    margin: 8px;
+    /*flex: 1 ;*/
+    flex-grow: 1;
+    flex-basis: 0;
+    /*it might be better to just ditch this and use a frontend framework*/
+}
+/*to hack it, we could have multiple rows, and make these all equal width columns. We could even have empty columns
+just for the patterning*/
+/*Seems pretty straightforward using BS: https://v4-alpha.getbootstrap.com/content/figures/*/
+/*if we use html5, it seems also pretty simple: */
+.main {
+
+    max-width: 50%;
 }

@@ -1,13 +1,17 @@
+/*figure {*/
+    /*display: table;*/
+    /*width: 1px; !* This can be any width, so long as it's narrower than any image *!*/
+/*}*/
+/*img, figcaption {*/
+    /*display: table-row;*/
+/*}*/
+/*#gucc{*/
+
+
+/*}*/
+
 figure {
-    display: table;
-    width: 1px; /* This can be any width, so long as it's narrower than any image */
-}
-img, figcaption {
-    display: table-row;
-}
-#gucc{
-
-
+    max-width: 250px;
 }
 
 #img_cap{

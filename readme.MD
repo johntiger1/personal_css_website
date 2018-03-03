@@ -18,6 +18,14 @@ Some teardown review/results:
 
 "Even a simple sidebar layout is, technically speaking, a little bit of a hack. Flexbox was invented to break out of these limitations."
 
+Finally, we came up with multiple independent solutions to the initial problem at hand:
+
+1. using the <figure> tag, along with some `table` css 
+2. using the container for the image and the caption (a p element) and then setting a max width on it; as well, use break-word as well for the text wrap
+3. using a jquery esque type solution
+
+What was confusing about all of these is how coupled everything is. It depends on the context that the PARENT container even exists in; in addition there are concerns like word-wrapping!
+
 
 
 The key idea behind CSS frameworks seems to be:
